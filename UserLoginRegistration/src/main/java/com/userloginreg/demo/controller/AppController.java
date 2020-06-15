@@ -41,29 +41,6 @@ public class AppController {
 		return "welcomepage";
 		
 	}
-	/*
-	@GetMapping("/show-users")
-	public String showAllUsers(HttpServletRequest request) {
-		request.setAttribute("users", userService.showAllUsers());
-		request.setAttribute("mode", "ALL_USERS");
-		return "welcomepage";
-	}
-
-	@RequestMapping("/delete-user")
-	public String deleteUser(@RequestParam int id, HttpServletRequest request) {
-		userService.deleteMyUser(id);
-		request.setAttribute("users", userService.showAllUsers());
-		request.setAttribute("mode", "ALL_USERS");
-		return "welcomepage";
-	}*/
-	/*
-	@RequestMapping("/edit-user")
-	public String editUser(@RequestParam int id,HttpServletRequest request) {
-		request.setAttribute("user", userService.editUser(id));
-		request.setAttribute("mode", "MODE_UPDATE");
-		return "welcomepage";
-	}
-	*/
 	@RequestMapping("/login")
 	public String login(HttpServletRequest request) {
 		request.setAttribute("mode", "MODE_LOGIN");
